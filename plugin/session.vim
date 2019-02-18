@@ -159,7 +159,8 @@ augroup PluginSession
   au VimLeavePre * call xolox#session#auto_unlock()
 augroup END
 
-call xolox#misc#cursorhold#register({'function': 'xolox#session#auto_save_periodic', 'interval': 60})
+" I don't need autosave and have deactivated the setting, still this handler shows up in verbose/debugging
+" call xolox#misc#cursorhold#register({'function': 'xolox#session#auto_save_periodic', 'interval': 60})
 
 " Plug-in commands (user defined commands). {{{1
 
